@@ -1,0 +1,10 @@
+services:
+  library_frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: game-frontend:latest
+    container_name: game_frontend_container
+    ports:
+      - "8081:80"
+    restart: always
